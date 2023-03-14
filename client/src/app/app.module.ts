@@ -43,7 +43,6 @@ import { DatePickerComponent } from './_forms/date-picker/date-picker.component'
     PhotoEditorComponent,
     TextInputComponent,
     DatePickerComponent
-    
   ],
   imports: [
     BrowserModule,
