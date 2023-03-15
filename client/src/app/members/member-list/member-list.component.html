@@ -43,12 +43,32 @@
       </select>
     </div>
     <button class="btn btn-primary ms-1" type="submit">Apply Filters</button>
-    <button class="btn btn-info ms-1" type="submit" (click)="resetFilters()">Reset Filters</button>
+    <button class="btn btn-info ms-1" type="submit" (click)="resetFilters()">
+      Reset Filters
+    </button>
 
     <div class="col">
       <div class="button-group float-end">
-        <button class="btn btn-primary" name="orderBy" [(ngModel)]="userParams.orderBy" btnRadio="lastActive" type="button" (click)="loadMembers()" > Last Active</button>
-        <button class="btn btn-primary" name="orderBy" [(ngModel)]="userParams.orderBy" btnRadio="created" type="button" (click)="loadMembers()" > Newest Members</button>
+        <button
+          class="btn btn-primary"
+          name="orderBy"
+          [(ngModel)]="userParams.orderBy"
+          btnRadio="lastActive"
+          type="button"
+          (click)="loadMembers()"
+        >
+          Last Active
+        </button>
+        <button
+          class="btn btn-primary"
+          name="orderBy"
+          [(ngModel)]="userParams.orderBy"
+          btnRadio="created"
+          type="button"
+          (click)="loadMembers()"
+        >
+          Newest Members
+        </button>
       </div>
     </div>
   </form>
